@@ -76,6 +76,13 @@ const NavigationMenu = (props) => {
           variant={vertical ? 'fullWidth' : 'standard'}
         >
           <Tab label='Home' value='' component={NavLink} to='/' />
+          <Tab
+            label='Routes'
+            value='routes'
+            component={NavLink}
+            to='/routes'
+            className={classes.navLink}
+          />
           {/* Auto import links */}
         </Tabs>
       </Grid>
@@ -112,14 +119,7 @@ export function Header() {
         </Hidden>
         <Link component={NavLink} to='/' className={classes.title}>
           <Typography component='h1' variant='subtitle1' noWrap>
-            <Hidden xsDown>
-              <img src='/logo.svg' alt='CARTO ' />
-            </Hidden>
-            <Hidden smUp>
-              <img src='/logo-xs.svg' alt='CARTO ' />
-              <Divider orientation='vertical' light />
-            </Hidden>
-            <strong>React</strong> Demo
+            <strong>Bay Bike Map</strong>
           </Typography>
         </Link>
         <Hidden xsDown>

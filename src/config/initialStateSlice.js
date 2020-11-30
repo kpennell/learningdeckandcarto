@@ -2,17 +2,17 @@ import { POSITRON } from '@carto/react/basemaps';
 
 export const initialState = {
   viewState: {
-    latitude: 31.802892,
-    longitude: -103.007813,
-    zoom: 2,
-    pitch: 0,
+    latitude: 37.7537487,
+    longitude: -122.2547929,
+    zoom: 10,
+    pitch: 3,
     bearing: 0,
     dragRotate: false,
   },
   basemap: POSITRON,
   credentials: {
-    username: 'TYPE HERE YOUR CARTO USERNAME',
-    apiKey: 'default_public',
+    username: 'kyle-se',
+    apiKey: 'eyFg36VV5D7XSXr0xKH5sQ',
     serverUrlTemplate: 'https://{user}.carto.com',
   },
   googleApiKey: '', // only required when using a Google Basemap
